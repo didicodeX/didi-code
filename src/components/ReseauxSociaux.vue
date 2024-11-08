@@ -18,6 +18,6 @@ const icons = ref([
 <style lang="scss" scoped>
 div {
   display: flex;
-  gap: 26px;
+  gap: 24px;
 }
 </style>

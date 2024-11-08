@@ -1,14 +1,14 @@
 <template>
   <div class="skills">
-    <div v-for="{id, name, url} in images" :key="id" >
-      <img :src="url" :alt="name">
+    <div v-for="{ id, name, url } in images" :key="id">
+      <img :src="url" :alt="name" />
       <p>{{ name }}</p>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const images = ref([
   { id: 1, name: 'Figma', url: '/src/assets/img/figma.png' },
@@ -19,13 +19,14 @@ const images = ref([
   { id: 6, name: 'Javascript', url: '/src/assets/img/javascript.png' },
   { id: 7, name: 'SEO', url: '/src/assets/img/seo.png' },
   { id: 8, name: 'Git', url: '/src/assets/img/git.png' },
-]);
+])
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/abstracts/mixins' as *;
+
 .skills {
-  display: flex;
-  gap: 26px;
+    @include flex-center;
 }
 img {
   height: 61px;

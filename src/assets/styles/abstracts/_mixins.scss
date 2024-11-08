@@ -1,7 +1,11 @@
-@mixin flex-center {
+@use "variables" as *;
+
+@mixin flex-center($justify: start, $align: center) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: $spacing-md;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: wrap;
 }
 
 @mixin transition($property, $duration: 0.3s, $timing: ease-in-out) {

@@ -1,56 +1,56 @@
 <template>
-    <div class="card">
-      <div class="card__header">
-        <img :src="props.img" alt="">
-      </div>
-      <div class="card__body">
-        <h4 class="card__title">{{ props.categorie }}</h4>
-        <a :href="props.link" class="card__link">Voir le projet</a>
-      </div>
-      <h4 class="card__subtitle">{{ props.name }}</h4>
+  <div class="card">
+    <div class="card__header">
+      <img :src="props.img" alt="" />
     </div>
+    <div class="card__body">
+      <h4 class="card__categorie">{{ props.categorie }}</h4>
+      <a class="card__link" :href="props.link">Voir le projet</a>
+    </div>
+    <h4 class="card__name">{{ props.name }}</h4>
+  </div>
 </template>
 
 <script lang="ts" setup>
 const props = defineProps<{
-  categorie: string;
-  name: string;
-  link: string;
-  img: string;
-}>();
+  categorie: string
+  name: string
+  link: string
+  img: string
+}>()
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/abstracts/variables' as *;
+
 .card {
-  border-radius: 5px;
-  width: 200px;
-  background-color: white;
-  color: #333;
-  background-color: red;
-}
-.card__header {
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #ccc;
-}
-.card__title {
-  margin: 0;
-}
-.card__body {
-  padding: 10px;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-}
-.card__subtitle {
-  margin: 0;
-}
-.card__link {
-  color: #007bff;
-  display: block;
-  margin-top: 10px;
-  text-decoration: none;
-}
-.card__link:hover {
-  text-decoration: underline;
+  width: 250px;
+  color: $primary-color;
+  background-color: $text-color;
+
+  &__header {
+    height: 300px;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__body {
+    padding: $spacing-xs;
+    display: flex;
+    align-items: baseline;
+    gap: $spacing-xs;
+  }
+  &__categorie {
+    color: $gray;
+  }
+  &__link {
+    color: $primary-color;
+  }
+  &__name {
+    padding-left: $spacing-xs;
+  }
 }
 </style>

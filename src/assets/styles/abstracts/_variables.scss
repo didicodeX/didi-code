@@ -2,6 +2,7 @@
 
 
 $font-title: "lora";
+
 $font-size-title1: 68px;
 $font-weight-title1: 600;
 $line-height-title1: 94px;
@@ -18,7 +19,11 @@ $font-text: "poppins", sans-serif;
 
 $font-special: "Roboto", sans-serif;
 
-$spacing-unit: 18px;
+$spacing-unit: 1rem;
+$spacing-xs: $spacing-unit * 0.625;
+$spacing-sm: $spacing-unit;
+$spacing-md: $spacing-unit * 1.5;
+$spacing-lg: $spacing-unit * 2;
 
 $font-size-link: 13px;
 $font-weight-link: 500;
@@ -34,9 +39,12 @@ $line-height-text: 32px;
 $primary-color: #1E1E2E;
 $secondary-color: #584966;
 
+$gray: #ABABAB;
+
 $background-color: #1E1E2E;
 
-$box-shadow: rgba(255, 255, 255, 0.08) 0px 0px 0px 1px inset;
+$box-shadow: rgba(33, 20, 20, 0.08) 0px 0px 0px 1px;
+$light-box-shadow: rgba(255, 255, 255, 0.973) 0px 2px 2px 1px;
 $radius: 10px;
 
 // Breakpoint pour les petits écrans

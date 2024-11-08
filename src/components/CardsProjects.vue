@@ -8,7 +8,6 @@
       :name="name"
       :img="img"
     />
-    <img src="/src/assets/img/figmaCourseSite.png" alt="">
   </div>
 </template>
 
@@ -35,22 +34,21 @@ const projects = ref([
     name: 'Figma Course',
     link: 'https://www.googlefont.com',
     img: '/src/assets/img/figmaCourseSite.png',
-    categorie: 'Figma design',
+    categorie: 'Figma',
   },
   {
     id: 4,
-    name: 'Portfolio',
+    name: 'Restaurant',
     link: 'https://lndev.me/',
-    img: '/src/assets/img/portfolio.png',
+    img: '/src/assets/img/restaurantSite.png',
     categorie: 'Website',
   },
 ])
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/abstracts//mixins' as *;
 .cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  @include flex-center(center);
 }
 </style>
