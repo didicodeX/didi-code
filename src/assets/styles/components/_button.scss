@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.button {
+  width: 209px;
+  border: none;
+  border-radius: $radius;
+  background-color: $secondary-color;
+  color: #fff;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+
+  @include transition(background-color);
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}

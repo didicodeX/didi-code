@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+.mt-1 {
+  margin-top: $spacing-unit;
+}
+
+.pt-2 {
+  padding-top: $spacing-unit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
