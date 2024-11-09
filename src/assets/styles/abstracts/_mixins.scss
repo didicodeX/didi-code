@@ -7,7 +7,10 @@
   align-items: $align;
   flex-wrap: wrap;
 }
-
+@mixin flex-column($justify: start, $align: start) {
+  @include flex-center($justify, $align);
+  flex-direction: column;
+}
 @mixin transition($property, $duration: 0.3s, $timing: ease-in-out) {
   transition: $property $duration $timing;
 }

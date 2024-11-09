@@ -50,5 +50,6 @@ const projects = ref([
 @use '../assets/styles/abstracts//mixins' as *;
 .cards {
   @include flex-center(center);
+  width: 100%;
 }
 </style>

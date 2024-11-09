@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .button {
   width: 209px;
@@ -10,7 +10,8 @@
   padding: 10px;
   border-radius: 999px;
   border: none;
-
+  padding: $spacing-xs $spacing-md;
+  text-align: center;
   @include transition(background-color);
 
   &:hover {

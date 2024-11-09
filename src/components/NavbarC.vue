@@ -1,22 +1,18 @@
 <template>
-  <div class="nav">
-    <div class="nav__logo">
-      <a href="#">
-        <img src="../assets/icons/me.svg" alt="logo" />
-      </a>
-    </div>
+  <header class="nav">
+    <a href="#" class="nav__logo">
+      <img src="../assets/icons/me.svg" alt="logo" />
+    </a>
     <div class="nav__links">
       <a class="nav__link" href="#intro">Intro</a>
       <a class="nav__link" href="#about">About</a>
       <a class="nav__link" href="#works">Works</a>
       <a class="nav__link" href="#contact">Contact</a>
     </div>
-    <div class="nav__theme">
-      <a href="#">
-        <i class="fa-regular fa-moon"></i>
-      </a>
-    </div>
-  </div>
+    <button class="nav__theme button">
+      <i class="fa-regular fa-moon"></i>
+    </button>
+  </header>
 </template>
 <script lang="ts" setup></script>
 
@@ -26,7 +22,7 @@
 
 .nav {
   @include flex-center(space-between);
-  padding: $spacing-xs;
+  padding: $spacing-lg $spacing-xs;
 
   &__logo {
     border-radius: 100%;
@@ -36,12 +32,16 @@
   }
   &__theme {
     background-color: $secondary-color;
-    width: 35px;
-    height: 35px;
+    width: 40px;
     display: flex;
     justify-content: center;
-    padding: 8px;
+    padding: $spacing-xs;
     border-radius: 100%;
+
+    @include transition(background-color);
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
   }
   &__logo {
     background-color: $text-color;

@@ -58,3 +58,12 @@ h3 {
   font-weight: $font-weight-title3;
   line-height: $line-height-title3;
 }
+
+section {
+  min-height: 100vh;
+  h2 {
+    border-bottom: 3px solid $secondary-color;
+    width: max-content;
+    margin-bottom: $spacing-lg;
+  }
+}
