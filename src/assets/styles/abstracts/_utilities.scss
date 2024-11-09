@@ -1,0 +1,40 @@
+@use "variables" as *;
+
+.gap-md {
+  gap: $spacing-md;
+}
+.gap-xs {
+  gap: $spacing-xs;
+}
+.p-xs {
+  padding: $spacing-xs;
+}
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.mini-title {
+  font-family: $font-title;
+  font-size: 50px;
+  line-height: $line-height-title2;
+}
+
+.b1{
+  background-color: red;
+}
+.b2{
+  background-color: blue;
+}
+.b3{
+  background-color: green;
+}
+.b4{
+  background-color: yellowgreen;
+}
+.b5{
+  background-color: brown;
+}

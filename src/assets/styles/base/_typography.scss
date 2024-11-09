@@ -1,0 +1,69 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+}
+
+p {
+  font-family: $font-text;
+  font-size: $font-size-text;
+  font-weight: $font-weight-text;
+  line-height: $line-height-text;
+}
+
+a {
+  font-family: $font-text;
+  font-size: $font-size-link;
+  font-weight: $font-weight-link;
+  line-height: $line-height-link;
+  color: $link-color;
+  @include transition(color);
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+button {
+  font-family: $font-text;
+  font-size: $font-size-text;
+  font-weight: $font-weight-text;
+  line-height: $line-height-text;
+  color: $text-color;
+}
+
+h1 {
+  font-size: $font-size-title1;
+  font-weight: $font-weight-title1;
+  line-height: $line-height-title1;
+}
+
+h2 {
+  font-size: $font-size-title2;
+  font-weight: $font-weight-title2;
+  line-height: $line-height-title2;
+}
+
+h3 {
+  font-size: $font-size-title3;
+  font-weight: $font-weight-title3;
+  line-height: $line-height-title3;
+}
+
+section {
+  min-height: 100vh;
+  h2 {
+    border-bottom: 3px solid $secondary-color;
+    width: max-content;
+    margin-bottom: $spacing-lg;
+  }
+}

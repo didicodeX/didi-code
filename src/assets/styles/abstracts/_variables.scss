@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+$font-title: "lora";
+
+$font-size-title1: 68px;
+$font-weight-title1: 600;
+$line-height-title1: 94px;
+
+$font-size-title2: 34px;
+$font-weight-title2: 800;
+$line-height-title2: 76px;
+
+$font-size-title3: 40px;
+$font-weight-title3: 400;
+$line-height-title3: 48px;
+
+$font-text: "poppins", sans-serif;
+
+$font-special: "Roboto", sans-serif;
+
+$spacing-unit: 1rem;
+$spacing-xs: $spacing-unit * 0.625;
+$spacing-sm: $spacing-unit;
+$spacing-md: $spacing-unit * 1.5;
+$spacing-lg: $spacing-unit * 2;
+
+$font-size-link: 13px;
+$font-weight-link: 500;
+$text-color: #fff;
+$link-color: #ffffffc8;
+$link-color-hover: #ffffff;
+$line-height-link: 18px;
+
+$font-size-text: 16px;
+$font-weight-text: 400;
+$line-height-text: 32px;
+
+$primary-color: #1E1E2E;
+$secondary-color: #584966;
+
+$gray: #ABABAB;
+
+$background-color: #1E1E2E;
+
+$box-shadow: rgba(33, 20, 20, 0.08) 0px 0px 0px 1px;
+$light-box-shadow: rgba(255, 255, 255, 0.973) 0px 2px 2px 1px;
+$radius: 10px;
+
+// Breakpoint pour les petits écrans
+@media screen and (max-width: 550px) {
+  $font-size-title1: 48px;
+  $line-height-title1: 48px;
+
+  $font-size-title3: 40px;
+  $line-height-title3: 48px;
+}
+
