@@ -9,16 +9,24 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import figma from '../assets/img/figma.png'
+import html5 from '../assets/img/html5.png'
+import scss from '../assets/img/scss.png'
+import tailwindcss from '../assets/img/tailwindcss.png'
+import typescript from '../assets/img/typescript.png'
+import vuejs from '../assets/img/vuejs.png'
+import seo from '../assets/img/seo.png'
+import git from '../assets/img/git.png'
 
 const images = ref([
-  { id: 1, name: 'Figma', url: '/src/assets/img/figma.png' },
-  { id: 2, name: 'HTML5', url: '/src/assets/img/html5.png' },
-  { id: 3, name: 'SCSS', url: '/src/assets/img/scss.png' },
-  { id: 4, name: 'Tailwind', url: '/src/assets/img/tailwindcss.png' },
-  { id: 5, name: 'TypeScript', url: '/src/assets/img/typescript.png' },
-  { id: 6, name: 'Vue', url: '/src/assets/img/vuejs.png' },
-  { id: 7, name: 'SEO', url: '/src/assets/img/seo.png' },
-  { id: 8, name: 'Git', url: '/src/assets/img/git.png' },
+  { id: 1, name: 'Figma', url: figma },
+  { id: 2, name: 'HTML5', url: html5 },
+  { id: 3, name: 'SCSS', url: scss },
+  { id: 4, name: 'Tailwind', url: tailwindcss },
+  { id: 5, name: 'TypeScript', url: typescript },
+  { id: 6, name: 'Vue', url: vuejs },
+  { id: 7, name: 'SEO', url: seo },
+  { id: 8, name: 'Git', url: git },
 ])
 </script>
 
@@ -26,12 +34,12 @@ const images = ref([
 @use '../assets/styles/abstracts/mixins' as *;
 
 .skills {
-    @include flex-center;
+  @include flex-center;
 }
 
 .skill {
-    @include flex-column(center, center);
-    gap: 10px;
+  @include flex-column(center, center);
+  gap: 10px;
 }
 
 img {

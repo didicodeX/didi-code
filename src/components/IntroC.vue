@@ -4,7 +4,7 @@
       Salut, Je suis Dylane Tano, Mon objectif est clair :
       <span>devenir un développeur web accompli.</span>
     </h1>
-    <img src="../assets/img/moi.png" alt="" />
+    <img :src="moi" alt="" />
 
     <div class="flex">
       <div class="contact">
@@ -12,8 +12,8 @@
         <a class="button" href="#about">PLUS SUR MOI</a>
       </div>
       <div class="me">
-        <img src="../assets/img/moi.png" alt="" />
-        <a class="button" href="../assets/doc/CV_Tano_Dylane.pdf" download="CV_Tano_Dylane.pdf"
+        <img :src="moi" alt="" />
+        <a class="button" :href="cv" download="CV_Tano_Dylane.pdf"
           >📄 Télécharger mon CV</a
         >
       </div>
@@ -24,6 +24,8 @@
 
 <script lang="ts" setup>
 import ReseauxSociaux from './ReseauxSociaux.vue'
+import moi from '../assets/img/moi.png'
+import cv from '../assets/doc/CV_Tano_Dylane.pdf'
 </script>
 
 <style lang="scss" scoped>

@@ -6,11 +6,14 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import whatsapp from '../assets/icons/bxl-whatsapp.svg';
+import github from '../assets/icons/bxl-github.svg';
+import email from '../assets/icons/bx-mail-send.svg';
 
 const icons = ref([
-  { id: 1, name: 'WhatsApp', url: '/src/assets/icons/bxl-whatsapp.svg', link: "https://wa.me/15062331887"},
-  { id: 2, name: 'GitHub', url: '/src/assets/icons/bxl-github.svg', link: "https://github.com/RusselTano" },
-  { id: 3, name: 'Email', url: '/src/assets/icons/bx-mail-send.svg', link: "mailto:edtanola01@monccnb.ca"},
+  { id: 1, name: 'WhatsApp', url: whatsapp, link: "https://wa.me/15062331887"},
+  { id: 2, name: 'GitHub', url: github, link: "https://github.com/RusselTano" },
+  { id: 3, name: 'Email', url: email, link: "mailto:edtanola01@monccnb.ca"},
 ]);
 </script>
 
