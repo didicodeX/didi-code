@@ -1,8 +1,10 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+@use 'sass:color';
+
 .button {
-  width: 209px;
+  width: max-content;
   border: none;
   border-radius: $radius;
   background-color: $secondary-color;
@@ -10,11 +12,11 @@
   padding: 10px;
   border-radius: 999px;
   border: none;
-  padding: $spacing-xs $spacing-md;
+  padding: 8px $spacing-lg;
   text-align: center;
   @include transition(background-color);
 
   &:hover {
-    background-color: darken($secondary-color, 10%);
+    background-color: color.adjust($secondary-color, $lightness: -10%);
   }
 }

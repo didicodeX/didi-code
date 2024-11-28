@@ -1,14 +1,17 @@
 <template>
-  <section id="contact" class="b">
+  <section id="contact">
     <h2>Contact</h2>
-    <p class="mini-title">
-      I love to hear from you. Whether you have a question or just want to chat about design, tech &
-      art shoot me a message.
-    </p>
+    <h1>
+      J'adore avoir de vos nouvelles. Que vous ayez une question ou que vous souhaitiez simplement discuter de design, de technologie et d'art, envoyez-moi un message.
+    </h1>
     <ReseauxSociaux />
-    <a href="" class="button">SAY HELLO</a>
+    <form action="mailto:edtanola01@monccnb.ca">
+      <button class="button">DIRE BONJOUR</button>
+    </form>
+    <br>
   </section>
 </template>
+
 
 <script lang="ts" setup>
 import ReseauxSociaux from './ReseauxSociaux.vue'
@@ -16,10 +19,12 @@ import ReseauxSociaux from './ReseauxSociaux.vue'
 
 <style lang="scss" scoped>
 @use '../assets/styles/abstracts/mixins' as *;
+@use '../assets/styles/abstracts/variables' as *;
 #contact {
   @include flex-column;
-  padding-top: 150px;
-  // gap: $spacing-lg;
+  gap: $spacing-xl;
+  padding-top: 3.8rem;
+  min-height: 80vh;
 }
 </style>
 

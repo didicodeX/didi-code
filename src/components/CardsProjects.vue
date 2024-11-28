@@ -17,14 +17,14 @@ import CardProject from './CardProject.vue'
 const projects = ref([
   {
     id: 1,
-    name: 'Chatbot',
-    link: 'https://www.amazon.com',
-    img: '/src/assets/img/Chatbot.png',
-    categorie: 'IA',
+    name: 'Figma course',
+    link: 'https://figma-course-pi.vercel.app/',
+    img: '/src/assets/img/figmaCourseChatbot.png',
+    categorie: 'Integration',
   },
   {
     id: 2,
-    name: 'Resto Kyoto',
+    name: 'Guide Kyoto',
     link: 'https://www.google.com',
     img: '/src/assets/img/KyotoSite.png',
     categorie: 'Website',
@@ -32,15 +32,15 @@ const projects = ref([
   {
     id: 3,
     name: 'Figma Course',
-    link: 'https://www.googlefont.com',
+    link: 'https://www.figma.com/design/qZBIuCbbhoCynV8NzHtxMc/Figma-Courses---Site?node-id=0-1&node-type=canvas&t=JVGCaL3sxRtG1a3x-0',
     img: '/src/assets/img/figmaCourseSite.png',
-    categorie: 'Figma',
+    categorie: 'Design Figma',
   },
   {
     id: 4,
-    name: 'Restaurant',
-    link: 'https://lndev.me/',
-    img: '/src/assets/img/restaurantSite.png',
+    name: 'Diane',
+    link: 'https://diane-sale.vercel.app/',
+    img: '/src/assets/img/diane.png',
     categorie: 'Website',
   },
 ])

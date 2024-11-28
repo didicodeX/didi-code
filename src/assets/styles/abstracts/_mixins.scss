@@ -11,6 +11,36 @@
   @include flex-center($justify, $align);
   flex-direction: column;
 }
-@mixin transition($property, $duration: 0.3s, $timing: ease-in-out) {
+@mixin transition($property, $duration: 0.2s, $timing: ease-in-out) {
   transition: $property $duration $timing;
+}
+
+// @mixin xs {
+//   @media screen and (max-width: 500px) {
+//     @content;
+//   }
+// }
+
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1600px) {
+    @content;
+  }
 }

@@ -19,8 +19,19 @@ import Contact from './components/ContactC.vue'
 
 <style lang="scss" scoped>
 @use './assets/styles/abstracts/variables' as *;
+@use './assets/styles/abstracts/mixins' as *;
 
 .app {
-  padding: 0 $spacing-lg * 3.4;
+  padding: 0 $limit-sm;
+
+  @include md {
+    padding: 0 $limit-md;
+  }
+  @include lg {
+    padding: 0 $limit-lg;
+  }
+  @include xl {
+    padding: 0 $limit-xl;
+  }
 }
 </style>

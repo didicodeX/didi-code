@@ -5,7 +5,7 @@
     </div>
     <div class="card__body">
       <h4 class="card__categorie">{{ props.categorie }}</h4>
-      <a class="card__link" :href="props.link">Voir le projet</a>
+      <a class="card__link" :href="props.link" target="_blank">Voir le projet</a>
     </div>
     <h4 class="card__name">{{ props.name }}</h4>
   </div>
@@ -28,6 +28,7 @@ const props = defineProps<{
   color: $primary-color;
   background-color: $text-color;
 
+
   &__header {
     height: 300px;
     overflow: hidden;
@@ -39,6 +40,7 @@ const props = defineProps<{
   }
   &__body {
     padding: $spacing-xs;
+    padding-left: $spacing-md;
     display: flex;
     align-items: baseline;
     gap: $spacing-xs;
@@ -48,9 +50,14 @@ const props = defineProps<{
   }
   &__link {
     color: $primary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &__name {
-    padding-left: $spacing-xs;
+    padding-left: $spacing-md;
+    padding-bottom: $spacing-xs;
   }
 }
 </style>

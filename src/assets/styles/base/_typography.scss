@@ -1,10 +1,8 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-body {
-  background-color: $background-color;
-  color: $text-color;
-}
+@use "sass:map";
+
 h1,
 h2,
 h3,
@@ -14,18 +12,52 @@ h6 {
   font-family: $font-title;
 }
 
-p {
+p, button, ul {
   font-family: $font-text;
-  font-size: $font-size-text;
-  font-weight: $font-weight-text;
-  line-height: $line-height-text;
+  color: $text-color;
+
+  font-size: map.get($text-sm, font-size);
+  font-weight: map.get($text-sm, font-weight);
+  line-height: map.get($text-sm, line-height);
+
+  @include md {
+    font-size: map.get($text-md, font-size);
+    line-height: map.get($text-md, line-height);
+  }
+
+  @include lg {
+    font-size: map.get($text-lg, font-size);
+    line-height: map.get($text-lg, line-height);
+  }
+
+  @include xl {
+    font-size: map.get($text-xl, font-size);
+    line-height: map.get($text-xl, line-height);
+  }
 }
 
 a {
-  font-family: $font-text;
-  font-size: $font-size-link;
-  font-weight: $font-weight-link;
-  line-height: $line-height-link;
+  font-family: $font-link;
+
+  font-size: map.get($link-sm, font-size);
+  font-weight: map.get($link-sm, font-weight);
+  line-height: map.get($link-sm, line-height);
+
+  @include md {
+    font-size: map.get($link-md, font-size);
+    line-height: map.get($link-md, line-height);
+  }
+
+  @include lg {
+    font-size: map.get($link-lg, font-size);
+    line-height: map.get($link-lg, line-height);
+  }
+
+  @include xl {
+    font-size: map.get($link-xl, font-size);
+    line-height: map.get($link-xl, line-height);
+  }
+
   color: $link-color;
   @include transition(color);
   &:hover {
@@ -33,37 +65,66 @@ a {
   }
 }
 
-button {
-  font-family: $font-text;
-  font-size: $font-size-text;
-  font-weight: $font-weight-text;
-  line-height: $line-height-text;
-  color: $text-color;
-}
-
 h1 {
-  font-size: $font-size-title1;
-  font-weight: $font-weight-title1;
-  line-height: $line-height-title1;
+  font-size: map.get($title1-sm, font-size);
+  font-weight: map.get($title1-sm, font-weight);
+  line-height: map.get($title1-sm, line-height);
+
+  @include md {
+    font-size: map.get($title1-md, font-size);
+    line-height: map.get($title1-md, line-height);
+  }
+
+  @include lg {
+    font-size: map.get($title1-lg, font-size);
+    line-height: map.get($title1-lg, line-height);
+  }
+
+  @include xl {
+    font-size: map.get($title1-xl, font-size);
+    line-height: map.get($title1-xl, line-height);
+  }
 }
 
 h2 {
-  font-size: $font-size-title2;
-  font-weight: $font-weight-title2;
-  line-height: $line-height-title2;
+  font-size: map.get($title2-sm, font-size);
+  font-weight: map.get($title2-sm, font-weight);
+  line-height: map.get($title2-sm, line-height);
+
+  @include md {
+    font-size: map.get($title2-md, font-size);
+    line-height: map.get($title2-md, line-height);
+  }
+
+  @include lg {
+    font-size: map.get($title2-lg, font-size);
+    line-height: map.get($title2-lg, line-height);
+  }
+
+  @include xl {
+    font-size: map.get($title2-xl, font-size);
+    line-height: map.get($title2-xl, line-height);
+  }
 }
 
 h3 {
-  font-size: $font-size-title3;
-  font-weight: $font-weight-title3;
-  line-height: $line-height-title3;
-}
+  font-size: map.get($title3-sm, font-size);
+  font-weight: map.get($title3-sm, font-weight);
+  line-height: map.get($title3-sm, line-height);
 
-section {
-  min-height: 100vh;
-  h2 {
-    border-bottom: 3px solid $secondary-color;
-    width: max-content;
-    margin-bottom: $spacing-lg;
+  @include md {
+    font-size: map.get($title3-md, font-size);
+    line-height: map.get($title3-md, line-height);
+  }
+
+  @include lg {
+    font-size: map.get($title3-lg, font-size);
+    line-height: map.get($title3-lg, line-height);
+  }
+
+  @include xl {
+    font-size: map.get($title3-xl, font-size);
+    line-height: map.get($title3-xl, line-height);
   }
 }
+
