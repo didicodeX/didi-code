@@ -29,7 +29,7 @@ const projects = ref([
   {
     id: 2,
     name: 'Guide Kyoto',
-    link: 'https://www.google.com',
+    link: 'https://guide-kyoto.vercel.app/',
     img: kyotoSite,
     categorie: 'Website',
   },
