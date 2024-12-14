@@ -54,8 +54,8 @@ a {
   }
 
   @include xl {
-    font-size: map.get($link-xl, font-size);
-    line-height: map.get($link-xl, line-height);
+    font-size: map.get($link-lg, font-size);
+    line-height: map.get($link-lg, line-height);
   }
 
   color: $link-color;
