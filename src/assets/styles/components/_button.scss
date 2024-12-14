@@ -9,10 +9,10 @@
   border-radius: $radius;
   background-color: $secondary-color;
   color: #fff;
-  padding: 10px;
+  // padding: 10px;
   border-radius: 999px;
   border: none;
-  padding: 8px $spacing-lg;
+  padding: 4px $spacing-sm;
   text-align: center;
   @include transition(background-color);
 

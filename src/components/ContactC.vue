@@ -5,10 +5,6 @@
       J'adore avoir de vos nouvelles. Que vous ayez une question ou que vous souhaitiez simplement discuter de design, de technologie et d'art, envoyez-moi un message.
     </h1>
     <ReseauxSociaux />
-    <form action="mailto:edtanola01@monccnb.ca">
-      <button class="button">DIRE BONJOUR</button>
-    </form>
-    <br>
   </section>
 </template>
 
@@ -23,7 +19,7 @@ import ReseauxSociaux from './ReseauxSociaux.vue'
 #contact {
   @include flex-column;
   gap: $spacing-xl;
-  padding-top: 3.8rem;
+  padding: 3.8rem 0 20px 0;
   min-height: 80vh;
 }
 </style>

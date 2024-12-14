@@ -35,6 +35,7 @@ footer {
     // @include flex-center(center);
     // border-radius: 100%;
     cursor: pointer;
+    margin-left: auto;
 
     .button{
       // background-color: $primary-color;

@@ -40,7 +40,7 @@ a {
   font-family: $font-link;
 
   font-size: map.get($link-sm, font-size);
-  font-weight: map.get($link-sm, font-weight);
+  // font-weight: map.get($link-sm, font-weight);
   line-height: map.get($link-sm, line-height);
 
   @include md {

@@ -14,7 +14,7 @@
       <div class="me">
         <img :src="moi" alt="" />
         <a class="button" :href="cv" download="CV_Tano_Dylane.pdf"
-          >📄 Télécharger mon CV</a
+          >Télécharger mon CV</a
         >
       </div>
     </div>
@@ -100,8 +100,11 @@ import cv from '../assets/doc/CV_Tano_Dylane.pdf'
 
 .flex {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   width: 100%;
+  @include sm {
+    justify-content: center;
+  }
 }
 h1 span {
   // text-decoration: underline;
