@@ -29,7 +29,7 @@ const projects = ref([
   {
     id: 2,
     name: 'Figma course',
-    link: 'https://figma-course-pi.vercel.app/',
+    link: 'https://figma-courses.vercel.app/',
     img: figmaCourseSite,
     categorie: 'Integration',
   },
