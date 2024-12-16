@@ -100,10 +100,9 @@ import cv from '../assets/doc/CV_Tano_Dylane.pdf'
 
 .flex {
   display: flex;
-  // justify-content: space-between;
   width: 100%;
   @include sm {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 h1 span {
