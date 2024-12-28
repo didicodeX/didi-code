@@ -19,15 +19,13 @@
 
 .nav {
   @include flex-center(center);
-  // padding: $spacing-lg $spacing-xs;
-  // min-height: 20vh;
   min-height: 50px;
-  // background-color: $secondary-color;
   background-color: $secondary-color-transparent;
   position: fixed;
   left: 0;
   right: 0;
-  // width: 100%;
+  z-index: 10;
+  backdrop-filter: blur(10px);
 
   &__links {
     @include flex-center(center);
@@ -36,7 +34,6 @@
     width: max-content;
     padding: 10px $spacing-lg;
   }
-  backdrop-filter: blur(10px);
   &__link {
     font-family: $font-title;
   }
