@@ -5,7 +5,7 @@
       Je m'appelle Dylane Tano, j'ai 19 ans et je suis passionné par le développement web. Mon
       objectif est clair : devenir un développeur web accompli, spécialisé dans la création
       d'expériences utilisateur captivantes et fonctionnelles. Mon parcours a débuté en février
-      2022, lorsque j'ai entrepris d'apprendre de manière autodidacte les bases du développement
+      2023, lorsque j'ai entrepris d'apprendre de manière autodidacte les bases du développement
       web. Actuellement, je poursuis mes études au Collège Communautaire du Nouveau-Brunswick
       (CCNB), au Canada, où je continue à affiner mes compétences et à élargir mes connaissances.
     </p>
