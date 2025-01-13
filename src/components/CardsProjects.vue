@@ -16,7 +16,7 @@ import { ref } from 'vue'
 // import figmaCourseChatbot from '../assets/img/figmaCourseSite.png'
 import Calculatrice from '../assets/img/calculatrice.png'
 import figmaCourseSite from '../assets/img/figmaCourseSite.png'
-import diane from '../assets/img/diane.png'
+import api from "../assets/img/api.png"
 import CardProject from './CardProject.vue'
 const projects = ref([
 {
@@ -35,17 +35,17 @@ const projects = ref([
   },
   {
     id: 3,
-    name: 'Diane',
-    link: 'https://diane-sale.vercel.app/',
-    img: diane,
-    categorie: 'Website',
-  },
-  {
-    id: 4,
     name: 'Calculatrice',
     link: 'https://calculatrice-vanilla.vercel.app/',
     img: Calculatrice,
     categorie: 'Website',
+  },
+  {
+    id: 4,
+    name: 'myaddressesbook',
+    link: 'https://api.myaddressesbook.com/docs/',
+    img: api,
+    categorie: 'API',
   },
 ])
 </script>
