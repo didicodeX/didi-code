@@ -14,7 +14,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 // import figmaCourseChatbot from '../assets/img/figmaCourseSite.png'
-import Calculatrice from '../assets/img/calculatrice.png'
+import ITSC from '../assets/img/ITSC.png'
 import figmaCourseSite from '../assets/img/figmaCourseSite.png'
 import api from "../assets/img/api.png"
 import CardProject from './CardProject.vue'
@@ -35,10 +35,10 @@ const projects = ref([
   },
   {
     id: 3,
-    name: 'Calculatrice',
-    link: 'https://calculatrice-vanilla.vercel.app/',
-    img: Calculatrice,
-    categorie: 'Website',
+    name: 'ITSC',
+    link: 'https://www.figma.com/design/tztzfjlF7XtxDXpS5OGXGZ/ITSC?node-id=0-1&p=f&t=pAHqIRGF573gfzAS-0',
+    img: ITSC,
+    categorie: 'Design Figma',
   },
   {
     id: 4,
