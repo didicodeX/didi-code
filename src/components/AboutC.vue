@@ -2,7 +2,7 @@
   <section id="about">
     <h2>A propos de moi</h2>
     <p>
-      Je m'appelle Dylane Tano, j'ai 19 ans et je suis passionné par le développement web. Mon
+      Je m'appelle Dylane Tano, je suis passionné par le développement web. Mon
       objectif est clair : devenir un développeur web accompli, spécialisé dans la création
       d'expériences utilisateur captivantes et fonctionnelles. Mon parcours a débuté en février
       2023, lorsque j'ai entrepris d'apprendre de manière autodidacte les bases du développement
